@@ -4,6 +4,7 @@ import { Stats } from "./stats/Stats";
 import { Category } from "./category/Category";
 import { Programs } from "./programs/Programs";
 import { QuickAccess } from "./quickaccess/QuickAccess";
+import { Blog } from "./blog/BLog";
 
 export const Home = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ export const Home = () => {
       {/* Quick Access Section */}
       <QuickAccess />
       {/* Blog Section */}
+      <Blog />
     </main>
   );
 };

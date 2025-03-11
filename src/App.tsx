@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar, Footer } from "./components";
-import { Home } from "./pages";
+import { Home, Programs } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,11 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* Pages */}
+          <Route path="/programs" element={<Programs />} />
+          {/* <Route path="/resources" element={<Resources />} /> */}
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
         {/* Footer Section */}
         <Footer />
